@@ -1,0 +1,377 @@
+.btn-get-started-2, .btn-get-started {
+  border-radius: 25px;
+  padding: 0.8rem 2.2rem;
+  color: #ffefeb;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: #f25f3a;
+  box-shadow: 0 10px 13px -0.5px rgba(241, 98, 58, 0.4);
+  cursor: pointer;
+}
+.btn-get-started-2:hover, .btn-get-started:hover {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.btn-get-started-2 {
+  color: #f25f3a;
+  background-color: #ffefeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: "Be Vietnam", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background: url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") right -10em top -8em no-repeat, url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") right -11em top 32em no-repeat;
+  background-size: 29rem, 20rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1, h2 {
+  color: #242d52;
+  font-weight: 700;
+}
+
+p {
+  color: #9095a7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sm-btn {
+  color: #ffefeb;
+  background-color: #f25f3a;
+  border-radius: 30px;
+  padding: 0.55rem 1.5rem;
+  border: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9095a7;
+  opacity: 0.8;
+  text-align: left;
+  font-size: 0.8rem;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9095a7;
+  text-align: left;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9095a7;
+  text-align: left;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 3rem 1.5rem;
+}
+nav .nav-container .nav-logo {
+  width: 7rem;
+}
+nav .nav-container #menu-list {
+  width: 19.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 7rem;
+  right: 1.95rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 20px 45px 10px rgba(0, 0, 0, 0.2);
+}
+nav .nav-container #menu-list li {
+  padding: 0.7rem;
+  list-style: none;
+}
+nav .nav-container #menu-list li a {
+  color: #242d52;
+  font-size: 1rem;
+  font-weight: 700;
+}
+nav .nav-container #menu-list.change-menu {
+  display: flex;
+}
+nav .nav-container .menu-ham-btn.change-menu {
+  opacity: 0;
+}
+nav .nav-container .close-menu {
+  display: none;
+}
+nav .nav-container .menu-close-btn.change-menu {
+  display: inline;
+}
+nav .nav-container .menu-close-btn {
+  display: none;
+}
+nav .nav-container .nav-get-started {
+  display: none;
+}
+
+.first-section .first-section-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.first-section .first-section-container .first-section-image {
+  width: 21.5rem;
+}
+.first-section .first-section-container .first-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem 7rem 1.5rem;
+}
+.first-section .first-section-container .first-section-left h1 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  max-width: 30rem;
+  margin-bottom: 0.5rem;
+}
+.first-section .first-section-container .first-section-left p {
+  line-height: 2rem;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.second-section .second-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-section .second-section-container .second-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+.second-section .second-section-container .second-section-left h2 {
+  font-size: 1.9rem;
+  max-width: 25rem;
+  margin-bottom: 1.2rem;
+}
+.second-section .second-section-container .second-section-left p {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  max-width: 25rem;
+  margin-bottom: 3rem;
+}
+.second-section .second-section-container .second-section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  max-width: 40rem;
+}
+.second-section .second-section-container .second-section-right p {
+  font-size: 0.9rem;
+}
+.second-section .second-section-container .second-section-right .flex-row {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.second-section .second-section-container .second-section-right .point-title {
+  color: #242d52;
+  background-color: #ffefeb;
+  text-align: left;
+  font-size: 0.97rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  width: 100%;
+  margin-left: -1rem;
+  z-index: -1;
+}
+.second-section .second-section-container .second-section-right .point-body {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.7rem;
+  margin-left: 1rem;
+  padding: 0.8rem 1.1rem 3rem 0;
+}
+
+.third-section {
+  padding-bottom: 3.5rem;
+}
+.third-section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 4rem;
+}
+.third-section .carousel {
+  margin-bottom: 3rem;
+}
+.third-section .carousel ol {
+  position: relative;
+  margin-top: 1rem;
+}
+.third-section .carousel ol li {
+  background-color: #f25f3a;
+  width: 0.5rem;
+  height: 0.6rem;
+  border-radius: 100%;
+}
+.third-section .carousel .carousel-inner .carousel-item .slide-container img {
+  width: 5rem;
+  margin-bottom: -2.5rem;
+}
+.third-section .carousel .carousel-inner .carousel-item .slide-container .slide {
+  background-color: #fafafa;
+  padding: 4rem 1.2rem 1.8rem 1.2rem;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+.third-section .carousel .carousel-inner .carousel-item .slide-container .slide h5 {
+  margin-bottom: 1.5rem;
+}
+.third-section .carousel .carousel-inner .carousel-item .slide-container .slide p {
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+.fourth-section {
+  background-color: #f25f3a;
+}
+.fourth-section .sm-bg-pattern {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  margin-top: 3rem;
+}
+.fourth-section .fourth-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 6rem 0;
+}
+.fourth-section .fourth-section-container h2 {
+  color: #ffefeb;
+  font-size: 2.3rem;
+  line-height: 3rem;
+  max-width: 30rem;
+  padding: 0.5rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.fifth-section {
+  color: #FFFFFF;
+  background-color: #1E1E26;
+  padding: 3rem 0;
+}
+.fifth-section .fifth-section-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.fifth-section .fifth-section-container .fsc1 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.fifth-section .fifth-section-container .fsc1 .social-media-icons {
+  margin-bottom: 3rem;
+}
+.fifth-section .fifth-section-container .fsc1 .social-media-icons .icon {
+  width: 1.8rem;
+  margin-right: 2rem;
+}
+.fifth-section .fifth-section-container .fsc1 .social-media-icons .last-icon {
+  margin: 0;
+}
+.fifth-section .fifth-section-container .fsc1 .logo-footer {
+  width: 10rem;
+  margin-bottom: 3rem;
+}
+.fifth-section .fifth-section-container .links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.fifth-section .fifth-section-container .links a {
+  color: #FFF;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.fifth-section .fifth-section-container .links .fsc3 {
+  margin-left: 7rem;
+}
+.fifth-section .fifth-section-container .fsc4 form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.fifth-section .fifth-section-container .fsc4 form label input {
+  height: 2.5rem;
+  width: 15rem;
+  border-radius: 35px;
+  border-style: none;
+  margin-right: 0.5rem;
+  padding-left: 1.5rem;
+}
+.fifth-section .fifth-section-container .fsc4 form label .error {
+  font-family: "Be Vietnam", sans-serif;
+  display: block;
+  text-align: left;
+  padding: 0;
+  font-size: 0.7rem;
+  color: #f96262;
+  margin: 5px 0 0 10px;
+}
+.fifth-section .fifth-section-container .fsc4 form a {
+  color: #FFF;
+}
+.fifth-section .fifth-section-container .fsc4 form .invalid-box {
+  border: 1px solid #f96262;
+}
+.fifth-section .copyright {
+  font-size: 0.8rem;
+  color: #9095a7;
+  opacity: 0.6;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=styles.css.map */
