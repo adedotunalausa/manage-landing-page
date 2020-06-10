@@ -11,7 +11,7 @@
 
   &:hover {
     transform: scale(.95);
-    opacity: 0.8;
+    background-color: #fb947a;
   }
 }
 
@@ -23,4 +23,8 @@
   @extend %btn;
   color: hsl(12, 88%, 59%);
   background-color: hsl(13, 100%, 96%);
+}
+
+.btn-get-started-2:hover {
+  background-color: #FFF;
 }

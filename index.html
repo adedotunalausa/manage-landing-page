@@ -19,20 +19,25 @@
 
 <body>
   <div class="bg-pattern-1"></div>
-  <!-- <img class="bg-pattern-1" src="images/bg-tablet-pattern.svg" alt="bg-pattern"> -->
-    <!-- <img class="bg-pattern-2" src="images/bg-tablet-pattern.svg" alt="bg-pattern"> -->
 
   <nav>
     <div class="nav-container">
       <img class="nav-logo" src="images/logo.svg" alt="logo-image">
-      <ul id="menu-list">
+      <ul id="menu-list-mobile">
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Product</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Careers</a></li>
         <li><a href="#">Community</a></li>
       </ul>
-      <a class="nav-get-started" href="#">Get Started</a>
+      <ul id="menu-list-desktop">
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+      <a class="nav-get-started btn-get-started" href="#">Get Started</a>
       <img id="menu" class="menu-ham-btn" src="images/icon-hamburger.svg" onclick="onClickMenu()" alt="menu-ham-btn">
       <img id="menu-close" class="menu-close-btn" src="images/icon-close.svg" onclick="onClickMenu()" alt="menu-ham-btn">
     </div>
@@ -175,7 +180,8 @@
   </section>
 
   <section class="fourth-section">
-    <img class="sm-bg-pattern" src="images/bg-simplify-section-mobile.svg" alt="simplify-bg">
+    <img class="sm-bg-pattern-mobile" src="images/bg-simplify-section-mobile.svg" alt="simplify-bg">
+    <!-- <img class="sm-bg-pattern-desktop" src="images/bg-simplify-section-desktop.svg" alt="simplify-bg"> -->
     <div class="fourth-section-container">
       <h2>Simplify how your team works today.</h2>
       <a class="btn-get-started-2" href="#">Get Started</a>
@@ -187,11 +193,11 @@
       <div class="fsc1">
         <img class="logo-footer" src="images/logo-footer.svg" alt="logo-image">
         <div class="social-media-icons">
-          <img class="icon" src="images/icon-facebook.svg" alt="facebook-image">
-          <img class="icon" src="images/icon-youtube.svg" alt="youtube-image">
-          <img class="icon" src="images/icon-twitter.svg" alt="twitter-image">
-          <img class="icon" src="images/icon-pinterest.svg" alt="pinterest-image">
-          <img class="icon last-icon" src="images/icon-instagram.svg" alt="instagram-image">
+          <a class="icon-link" href="#"><img class="icon" src="images/icon-facebook.svg" alt="facebook-image"></a>
+          <a class="icon-link" href="#"><img class="icon" src="images/icon-youtube.svg" alt="youtube-image"></a>
+          <a class="icon-link" href="#"><img class="icon" src="images/icon-twitter.svg" alt="twitter-image"></a>
+          <a class="icon-link" href="#"><img class="icon" src="images/icon-pinterest.svg" alt="pinterest-image"></a>
+          <a class="icon-link" href="#"><img class="icon last-icon" src="images/icon-instagram.svg" alt="instagram-image"></a>
         </div>
       </div>
       <div class="links">

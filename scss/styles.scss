@@ -37,20 +37,10 @@ a {
   text-decoration: none;
 }
 
-// .bg-pattern-1 {
-//   position: absolute;
-//   top: -7.5rem;
-//   left: 4rem;
-//   width: 29rem;
-//   z-index: -1;
-// }
-//
-//   .bg-pattern-2 {
-//     position: absolute;
-//     margin-left: 10rem;
-//     z-index: -10;
-//     overflow-x: hidden;
-//   }
+a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
 
 .flex-column-start {
   display: flex;
@@ -102,7 +92,7 @@ nav {
       width: 7rem;
     }
 
-    #menu-list {
+    #menu-list-mobile {
       width: 19.5rem;
       display: none;
       flex-direction: column;
@@ -128,7 +118,11 @@ nav {
       }
     }
 
-    #menu-list.change-menu {
+    #menu-list-desktop {
+      display: none;
+    }
+
+    #menu-list-mobile.change-menu {
       display: flex;
     }
 
@@ -304,21 +298,21 @@ nav {
       }
     }
   }
-
-  // a {
-  //
-  // }
 }
 
 // Fourth Section
 .fourth-section {
   background-color: hsl(12, 88%, 59%);
 
-  .sm-bg-pattern {
+  .sm-bg-pattern-mobile {
     position: absolute;
     left: 0;
     z-index: 1;
     margin-top: 3rem;
+  }
+
+  .sm-bg-pattern-desktop {
+    display: none;
   }
 
   .fourth-section-container {
@@ -334,6 +328,10 @@ nav {
       max-width: 30rem;
       padding: .5rem 2.5rem;
       margin-bottom: 2rem;
+    }
+
+    a:hover {
+      color: hsl(12, 88%, 59%);
     }
   }
 }
@@ -438,6 +436,278 @@ nav {
   }
 }
 
+@media screen and (min-width: 900px) {
+  body{
+    background: url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") right -10em top -12em no-repeat,
+    url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") left -27em top 58em no-repeat;
+    background-size: 45rem;
+  }
+
+  .sm-btn {
+    padding: .45rem 1.5rem;
+  }
+  nav {
+    .nav-container {
+      max-width: 1000px;
+      padding: 2rem 1.5rem;
+
+      #menu-list-mobile {
+        display: none;
+      }
+
+      #menu-list-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: .7rem;
+
+        li {
+          padding: 0.7rem;
+          list-style: none;
+
+          a {
+            color: hsl(228, 39%, 23%);
+            font-size: 0.7rem;
+            font-weight: 500;
+          }
+
+          a:hover {
+            color: hsl(227, 12%, 61%);
+          }
+        }
+      }
+
+      .menu-ham-btn {
+        display: none
+      }
+
+      .nav-get-started {
+        display: inline;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  // First Section
+  .first-section {
+    .first-section-container {
+      flex-direction: row;
+      max-width: 1000px;
+      margin: 2rem auto;
+      margin-bottom: 5rem;
+
+      .first-section-image {
+        width: 30rem;
+      }
+
+      .first-section-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1.5rem 0 1.5rem;
+
+        h1 {
+          text-align: left;
+          font-size: 3.1rem;
+          line-height: 3.5rem;
+          max-width: 28rem;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          text-align: left;
+          line-height: 1.5rem;
+          max-width: 22rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  // Second Section
+  .second-section {
+    .second-section-container {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: auto;
+      margin-bottom: 5rem;
+
+      .second-section-left {
+        padding: 0 2rem;
+        align-items: flex-start;
+
+        h2 {
+          text-align: left;
+          font-size: 1.9rem;
+          max-width: 25rem;
+        }
+
+        p {
+          text-align: left;
+          font-size: 0.8rem;
+          line-height: 1.5rem;
+          max-width: 18rem;
+        }
+      }
+
+      .second-section-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        max-width: 40rem;
+
+        p {
+          font-size: 0.85rem;
+        }
+
+        .flex-row {
+          height: 2.5rem;
+        }
+
+        .point-title {
+          font-size: 0.95rem;
+          background-color: transparent;
+          padding: .5rem 1rem .5rem 2.5rem;
+        }
+
+        .point-body {
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+          max-width: 26rem;
+          margin-left: 6.5rem;
+          padding: 0 1.1rem 1rem 0;
+        }
+      }
+    }
+  }
+
+  // Fourth Section
+  .fourth-section {
+
+    .sm-bg-pattern-mobile {
+      display: none;
+    }
+
+    .sm-bg-pattern-desktop {
+      display: flex;
+      width: 85rem;
+      position: absolute;
+      left: 12rem;
+      bottom: -85rem;
+      z-index: 1;
+      margin-top: 3rem;
+    }
+
+    .fourth-section-container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 3rem 0 3rem 0;
+      margin: auto;
+      max-width: 1000px;
+
+      h2 {
+        text-align: left;
+        padding: .5rem 0;
+      }
+
+      a:hover {
+        color: hsl(13, 100%, 85%);
+      }
+    }
+  }
+
+  // Fifth Section
+  .fifth-section {
+    padding: 4rem 0;
+
+    .fifth-section-container {
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: auto;
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .fsc1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 8rem;
+
+        .social-media-icons {
+          margin-bottom: 0;
+
+          .icon {
+            width: 1.3rem;
+            margin: 0 .25rem 0 .25rem;
+          }
+
+        }
+
+        .logo-footer {
+          width: 9rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .links {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0;
+        width: 20rem;
+
+        a {
+          color: #FFF;
+          font-size: 0.95rem;
+          padding-bottom: 0.7rem;
+          text-align: left;
+        }
+
+        a:hover {
+          color: hsl(0, 93%, 68%);
+        }
+
+        .fsc3 {
+          margin-left: 7rem;
+        }
+      }
+
+      .fsc4 {
+        form {
+          label {
+            input {
+              width: 12rem;
+            }
+          }
+          a {
+            color: #FFF;
+          }
+
+          .sm-btn:hover {
+            background-color: #fb947a;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      right: 0;
+      margin-right: 9rem;
+      font-size: 0.7rem;
+    }
+  }
+
+
+
+}
 
 
 
