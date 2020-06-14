@@ -14,6 +14,7 @@
 }
 
 .btn-get-started-2 {
+  font-size: 0.9rem;
   color: #f25f3a;
   background-color: #ffefeb;
 }
@@ -35,7 +36,7 @@ body {
   font-family: "Be Vietnam", sans-serif;
   width: 100%;
   overflow-x: hidden;
-  background: url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") right -10em top -8em no-repeat, url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") right -11em top 32em no-repeat;
+  background: url("images/bg-tablet-pattern.svg") right -10em top -8em no-repeat, url("images/bg-tablet-pattern.svg") right -11em top 32em no-repeat;
   background-size: 29rem, 20rem;
 }
 
@@ -236,7 +237,7 @@ nav .nav-container .nav-get-started {
 }
 
 .third-section {
-  padding-bottom: 3.5rem;
+  padding: 0 1rem 3.5rem 1rem;
 }
 .third-section h2 {
   font-size: 1.9rem;
@@ -385,7 +386,7 @@ nav .nav-container .nav-get-started {
 
 @media screen and (min-width: 900px) {
   body {
-    background: url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") right -10em top -12em no-repeat, url("file:///Users/Adedotun/Documents/WebDev/FrontEndMentor/manage-landing-page-master/images/bg-tablet-pattern.svg") left -27em top 58em no-repeat;
+    background: url("images/bg-tablet-pattern.svg") right -10em top -12em no-repeat, url("images/bg-tablet-pattern.svg") left -27em top 58em no-repeat;
     background-size: 45rem;
   }
 
@@ -504,11 +505,30 @@ nav .nav-container .nav-get-started {
     padding: 0 1.1rem 1rem 0;
   }
 
+  .third-section {
+    padding-bottom: 12rem;
+  }
+  .third-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+  }
+  .third-section .carousel {
+    margin-bottom: 3rem;
+  }
+  .third-section .carousel .carousel-inner .carousel-item .slide-container img {
+    width: 5.5rem;
+  }
+  .third-section .carousel .carousel-inner .carousel-item .slide-container .slide {
+    max-width: 34rem;
+  }
+  .third-section .carousel .carousel-inner .carousel-item .slide-container .slide p {
+    font-size: 1.1rem;
+  }
+
   .fourth-section .sm-bg-pattern-mobile {
     display: none;
   }
   .fourth-section .sm-bg-pattern-desktop {
-    display: flex;
     width: 85rem;
     position: absolute;
     left: 12rem;
@@ -594,6 +614,135 @@ nav .nav-container .nav-get-started {
     right: 0;
     margin-right: 9rem;
     font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background: url("images/bg-tablet-pattern.svg") right -10em top -12em no-repeat, url("images/bg-tablet-pattern.svg") left -32em top 68em no-repeat;
+    background-size: 51rem;
+  }
+
+  .sm-btn {
+    padding: 0.55rem 1.5rem;
+  }
+
+  nav .nav-container {
+    max-width: 1200px;
+  }
+  nav .nav-container .nav-logo {
+    width: 8rem;
+  }
+  nav .nav-container #menu-list-desktop li a {
+    font-size: 0.8rem;
+  }
+  nav .nav-container .nav-get-started {
+    font-size: 0.8rem;
+  }
+
+  .first-section .first-section-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+  }
+  .first-section .first-section-container .first-section-image {
+    width: 37rem;
+  }
+  .first-section .first-section-container .first-section-left h1 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    max-width: 30rem;
+    margin-bottom: 2.2rem;
+  }
+  .first-section .first-section-container .first-section-left p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    max-width: 24rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .second-section .second-section-container {
+    max-width: 1200px;
+    margin-bottom: 6rem;
+  }
+  .second-section .second-section-container .second-section-left {
+    padding: 0 2rem;
+    align-items: flex-start;
+  }
+  .second-section .second-section-container .second-section-left h2 {
+    font-size: 2.5rem;
+    max-width: 35rem;
+    margin-bottom: 2rem;
+  }
+  .second-section .second-section-container .second-section-left p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    max-width: 25rem;
+  }
+  .second-section .second-section-container .second-section-right {
+    margin-bottom: 1rem;
+    max-width: 50rem;
+  }
+  .second-section .second-section-container .second-section-right p {
+    font-size: 1.1rem;
+  }
+  .second-section .second-section-container .second-section-right .point-title {
+    font-size: 1.1rem;
+  }
+  .second-section .second-section-container .second-section-right .point-body {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    max-width: 34rem;
+    margin-left: 6.9rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .third-section h2 {
+    font-size: 2.5rem;
+  }
+  .third-section .carousel .carousel-inner .carousel-item .slide-container .slide {
+    max-width: 38rem;
+  }
+  .third-section .carousel .carousel-inner .carousel-item .slide-container .slide p {
+    font-size: 1.1rem;
+  }
+
+  .fourth-section .fourth-section-container {
+    max-width: 1200px;
+  }
+  .fourth-section .fourth-section-container h2 {
+    font-size: 2.6rem;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  .fourth-section .fourth-section-container a:hover {
+    color: #ffc3b3;
+  }
+
+  .fifth-section .fifth-section-container {
+    max-width: 1200px;
+  }
+  .fifth-section .fifth-section-container .links {
+    width: 25rem;
+  }
+  .fifth-section .fifth-section-container .links a {
+    color: #FFF;
+    font-size: 0.95rem;
+    padding-bottom: 0.7rem;
+    text-align: left;
+  }
+  .fifth-section .fifth-section-container .links a:hover {
+    color: #f96262;
+  }
+  .fifth-section .fifth-section-container .links .fsc3 {
+    margin-left: 7rem;
+  }
+  .fifth-section .fifth-section-container .fsc4 form label input {
+    width: 14rem;
+    height: 3rem;
+  }
+  .fifth-section .copyright {
+    margin-right: 8rem;
+    font-size: 0.9rem;
   }
 }
 .attribution {

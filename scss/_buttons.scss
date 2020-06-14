@@ -21,6 +21,7 @@
 
 .btn-get-started-2 {
   @extend %btn;
+  font-size: 0.9rem;
   color: hsl(12, 88%, 59%);
   background-color: hsl(13, 100%, 96%);
 }
