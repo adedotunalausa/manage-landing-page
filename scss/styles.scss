@@ -625,10 +625,10 @@ nav {
 
     .sm-bg-pattern-desktop {
       display: inline;
-      width: 100rem;
+      width: 90rem;
       position: absolute;
       left: 12rem;
-      bottom: -97rem;
+      bottom: -90.4rem;
       z-index: 1;
       margin-top: 3rem;
     }
@@ -873,6 +873,13 @@ nav {
 
   // Fourth Section
   .fourth-section {
+
+    .sm-bg-pattern-desktop {
+      width: 100rem;
+      position: absolute;
+      left: 12rem;
+      bottom: -97rem;
+    }
     .fourth-section-container {
       max-width: 1200px;
 
