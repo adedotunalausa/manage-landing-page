@@ -586,6 +586,7 @@ nav {
 
   // Third Section
   .third-section {
+    z-index: 3;
     padding-bottom: 12rem;
     h2 {
       font-size: 2.2rem;
@@ -623,11 +624,11 @@ nav {
     }
 
     .sm-bg-pattern-desktop {
-      // display: inline;
-      width: 85rem;
+      display: inline;
+      width: 100rem;
       position: absolute;
       left: 12rem;
-      bottom: -85rem;
+      bottom: -97rem;
       z-index: 1;
       margin-top: 3rem;
     }
@@ -653,6 +654,7 @@ nav {
   // Fifth Section
   .fifth-section {
     padding: 4rem 0;
+    z-index: 10;
 
     .fifth-section-container {
       flex-direction: row;

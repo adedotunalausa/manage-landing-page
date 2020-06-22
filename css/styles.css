@@ -506,6 +506,7 @@ nav .nav-container .nav-get-started {
   }
 
   .third-section {
+    z-index: 3;
     padding-bottom: 12rem;
   }
   .third-section h2 {
@@ -529,10 +530,11 @@ nav .nav-container .nav-get-started {
     display: none;
   }
   .fourth-section .sm-bg-pattern-desktop {
-    width: 85rem;
+    display: inline;
+    width: 100rem;
     position: absolute;
     left: 12rem;
-    bottom: -85rem;
+    bottom: -97rem;
     z-index: 1;
     margin-top: 3rem;
   }
@@ -553,6 +555,7 @@ nav .nav-container .nav-get-started {
 
   .fifth-section {
     padding: 4rem 0;
+    z-index: 10;
   }
   .fifth-section .fifth-section-container {
     flex-direction: row;
